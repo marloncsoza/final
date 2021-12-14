@@ -25,6 +25,39 @@ body {
         background-position: 0% 50%;
     }
 }
+
+.ws-containner{
+    
+    position: relative;
+    margin: 0;
+    
+}
+
+.wsummary{
+    text-align: center;
+    margin: 12px 18px -20px 30px;
+    padding: 0;
+    background-color: #;52b69a
+}
+.wsummary section{
+    padding: 1rem;
+    color: white;
+    line-height: 100%;
+
+}
+.wsummary section h4{
+    margin: 2;
+    padding-bottom: 0.8rem; 
+    color: #444;
+}
+.wsummary section p{
+    font-size: 0.8rem;
+    margin: 0;
+}
+.wsummary section p span{
+    color: #444;   
+}
+
 /* Header/Blog Title 
 .header {
   padding: 30px;
