@@ -52,10 +52,10 @@ function createCard(weatherList){
         let image = document.createElement("img");
 
         h2.textContent = `Current: ${weather.Current} `;
-        High.textContent = `High: ${weather.birthdate} °C `;
-        Windchill.textContent = `Windchill: ${weather.birthplace}`;
-        Humidity.textContent = `Humidity: ${weather.birthplace} %`;
-        Windspeed.textContent = `Wind Speed: ${weather.birthplace} km/ph`;
+        High.textContent = `High: ${weather.High} °C `;
+        Windchill.textContent = `Windchill: ${weather.Windchill}`;
+        Humidity.textContent = `Humidity: ${weather. Humidity} %`;
+        Windspeed.textContent = `Wind Speed: ${weather.Windspeed} km/ph`;
         image.setAttribute('src', weather.imageurl);
         image.setAttribute('alt', `${weather.Current} ${weather.Current} - ${weather.order}`);
 
