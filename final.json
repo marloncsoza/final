@@ -1,13 +1,12 @@
 {
-    "weather": [
-     
-      {
-        "tem": "17",
-        "wc":"9",
-        "wc":"11.5",
-       
-      }
-    ]
-  }
-
-   
+  "weather": [
+    {
+      "Current": "Party Cloudy",
+      "High": "16",
+      "Windchill": "9",
+      "Humidity": "44",
+      "Windspeed": 14,
+      "imageurl": "https://cdn.glitch.me/26350599-c834-402e-93cc-4954ba287c79%2Fcloudy.png?v=1634982501944"
+    }
+  ]
+}
