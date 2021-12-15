@@ -38,28 +38,35 @@ items.forEach(item => item.addEventListener('click', toggleAccordion));
 
 
 
-const requestURL = 'https://byui-cit230.github.io/lessons/lesson-09/data/latter-day-prophets.json';
-let prophets = [];
+const requestURL = 'https://marloncsoza.github.io/final/final.json';
+let weather = [];
 
-function createCard(prophetsList){
-    prophetsList.forEach(prophet => {
+function createCard(weatherList){
+    weatherList.forEach(weather => {
         let card = document.createElement('section');
         let h2 = document.createElement('h2');
-        let pBirthdate = document.createElement("p");
-        let pBirthplace = document.createElement("p");
+        let High = document.createElement("p");
+        let Windchill = document.createElement("p");
+        let Humidity = document.createElement("p");
+        let Windspeed = document.createElement("p");
         let image = document.createElement("img");
 
-        h2.textContent = `${prophet.name} ${prophet.lastname}`;
-        pBirthdate.textContent = `Date of Birth: ${prophet.birthdate}`;
-        pBirthplace.textContent = `Place of Birth: ${prophet.birthplace}`;
-        image.setAttribute('src', prophet.imageurl);
-        image.setAttribute('alt', `${prophet.name} ${prophet.lastname} - ${prophet.order}`);
+        h2.textContent = `Current: ${weather.Current} `;
+        High.textContent = `High: ${weather.birthdate} °C `;
+        Windchill.textContent = `Windchill: ${weather.birthplace}`;
+        Humidity.textContent = `Humidity: ${weather.birthplace} %`;
+        Windspeed.textContent = `Wind Speed: ${weather.birthplace} km/ph`;
+        image.setAttribute('src', weather.imageurl);
+        image.setAttribute('alt', `${weather.Current} ${weather.Current} - ${weather.order}`);
 
 
         card.appendChild(h2);
-        card.appendChild(pBirthdate);
-        card.appendChild(pBirthplace);
         card.appendChild(image);
+        card.appendChild(High);
+        card.appendChild(Windchill);
+        card.appendChild(Humidity);
+        card.appendChild(Windspeed);
+        
 
         document.querySelector('div.cards').appendChild(card);        
     });
@@ -72,6 +79,6 @@ fetch(requestURL)
     return response.json();
   })
   .then(function (jsonObject) {
-    prophets = jsonObject['prophets'];
-    createCard(prophets);
+    weather = jsonObject['weather'];
+    createCard(weather);
   });
