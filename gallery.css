@@ -1,0 +1,378 @@
+/**
+body {
+		background-color: #E9E9E9;
+		color: #333;
+		font-family:"Lucida handwriting", "Snell Roundhand", "Helvetica Neue",Arial,Helvetica,sans-serif;
+		font-size: 16px;
+	}
+	**/
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+	.amp {
+		font-family:Garamond,Baskerville,Georgia,serif !important;
+		font-style:italic;
+		font-weight:normal;
+		border: none;
+	}
+	
+	a.polaroid {
+		display: block;
+		text-decoration: none;
+		color: #333;
+		padding: 10px 10px 20px 10px;
+		width: 150px;
+		border: 1px solid #BFBFBF;
+		background-color: white;
+		z-index: 2;
+		font-size: 0.7em;
+		-webkit-box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+		-moz-box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+		box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+		-webkit-transition: -webkit-transform 0.5s ease-in;
+	}
+	a.polaroid:hover,
+	a.polaroid:focus,
+	a.polaroid:active {
+		z-index: 999;
+		border-color: #6A6A6A;
+		-webkit-box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+		-moz-box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+		box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+		-webkit-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	.polaroid img {
+		margin: 0 0 15px;
+		width: 150px;
+		height: 150px;
+	}
+	
+	a img {
+		border: none;
+		display: block;
+	}
+	
+	.photo-album {
+		position: relative;
+		width: 80%;
+		margin: 0 auto;
+		max-width: 70em;
+		height: 450px;
+		margin-top: 5em;
+		min-width: 800px;
+		max-width: 900px;
+	}
+	.photo-album .polaroid {
+		position: absolute;
+	}
+	.photo-album h1 {
+		position: absolute;
+		z-index: 5;
+		top: 150px;
+		text-align: center;
+		width: 100%;
+		line-height: 1.9;
+	}
+	.photo-album h1 span {
+		background-color: white;
+		font-family: "Helvetica Neue",Arial,Helvetica,sans-serif;
+		padding: 0.4em 0.8em 0.3em 0.8em;
+		-webkit-box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+		-moz-box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+		box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+		border: 1px solid #6A6A6A;
+	}
+	.photo-album .small {
+		width: 75px;
+		padding: 6px 6px 12px 6px;
+		font-size: 0.6em;
+	}
+	.photo-album .small img {
+		width: 75px;
+		height: 75px;
+	}
+	.photo-album .medium {
+		width: 200px;
+		padding: 13px 13px 26px 13px;
+		font-size: 0.8em;
+	}
+	.photo-album .medium img {
+		width: 200px;
+		height: 200px;
+	}
+	.photo-album .large {
+		width: 300px;
+		padding: 20px 20px 30px 20px;
+		font-size: 1em;
+	}
+	.photo-album .large img {
+		width: 300px;
+		height: 300px;
+	}
+	.photo-album .img1 {
+		bottom: 10px;
+		right: 365px;
+		-webkit-transform: rotate(10deg);
+		-moz-transform: rotate(10deg);
+		transform: rotate(10deg);
+	}
+	.photo-album .img2 {
+		top: 50px;
+		right: 20px;
+		-webkit-transform: rotate(-4deg);
+		-moz-transform: rotate(-4deg);
+		transform: rotate(-4deg);
+	}
+	.photo-album .img3 {
+		left: 400px;
+		top: 0;
+		-webkit-transform: rotate(-5deg);
+		-moz-transform: rotate(-5deg);
+		transform: rotate(-5deg);
+	}
+	.photo-album .img4 {
+		top: 10px;
+		left: 495px;
+		-webkit-transform: rotate(-20deg);
+		-moz-transform: rotate(-20deg);
+		transform: rotate(-20deg);
+	}
+	.photo-album .img5 {
+		bottom: 0;
+		right: 0;
+		-webkit-transform: rotate(1deg);
+		-moz-transform: rotate(1deg);
+		transform: rotate(1deg);
+	}
+	.photo-album .img6 {
+		bottom: 10px;
+		right: 156px;
+		-webkit-transform: rotate(6deg);
+		-moz-transform: rotate(6deg);
+		transform: rotate(6deg);
+	}
+	.photo-album .img7 {
+		bottom:0;
+		left:400px;
+		-webkit-transform: rotate(-10deg);
+		-moz-transform: rotate(-10deg);
+		transform: rotate(-10deg);
+	}
+	.photo-album .img8 {
+		bottom: -20px;
+		left: 700px;
+		-webkit-transform: rotate(-8deg);
+		-moz-transform: rotate(-8deg);
+		transform: rotate(-8deg);
+	}
+	.photo-album .img9 {
+		bottom: 0;
+		left: 0;
+		-webkit-transform: rotate(-8deg);
+		-moz-transform: rotate(-8deg);
+		transform: rotate(-8deg);
+	}
+	.photo-album .img10 {
+		top: 0;
+		left: 20px;
+		-webkit-transform: rotate(8deg);
+		-moz-transform: rotate(8deg);
+		transform: rotate(8deg);
+	}
+	.photo-album .img11 {
+		top: 0;
+		right: 0;
+		-webkit-transform: rotate(-8deg);
+		-moz-transform: rotate(-8deg);
+		transform: rotate(-8deg);
+	}
+	.photo-album .img12 {
+		top: 0;
+		left: 680px;
+		-webkit-transform: rotate(18deg);
+		-moz-transform: rotate(18deg);
+		transform: rotate(18deg);
+	}
+	.photo-album .img13 {
+		bottom: -20px;
+		right: 630px;
+		-webkit-transform: rotate(4deg);
+		-moz-transform: rotate(4deg);
+		transform: rotate(4deg);
+	}
+	.photo-album .img14 {
+		top: 90px;
+		left: 430px;
+		-webkit-transform: rotate(15deg);
+		-moz-transform: rotate(15deg);
+		transform: rotate(15deg);
+	}
+	.photo-album .img15 {
+		left:176px;
+		top:20px;
+		-webkit-transform: rotate(-8deg);
+		-moz-transform: rotate(-8deg);
+		transform: rotate(-8deg);
+	}
+	
+	a:hover,
+	a:focus {
+		z-index: 5;
+	}
+	
+
+
+
+
+
+header{
+    margin: 0 auto;
+    text-align: center;
+    background-color: #b7b7a4;
+    font-family: "Noto Serif", Helvetica, Arial, sans-serif;
+    align-items:center;
+	 justify-content:center;
+    display: flex;
+}
+header img{
+    padding: 10px 10px;
+    width: 80px;
+    
+}
+h1{
+    font-size: 1.7rem;
+}
+h2{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+header section{
+   text-align: left;
+    color: black;#edffec
+    display: flex;
+	  flex-direction: column;
+    margin-bottom: 5px;
+    padding-right: 5px;
+}
+.motto{
+    font-style: italic;
+  	letter-spacing: 1pt;
+  	font-size: .9rem;
+    margin-top: -15px;
+   
+}     
+  
+  
+  
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+}
+
+/* Links inside the navbar */
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/*...........................................*/
+
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+  
+  
+  
+  
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+ 
+  
+
+footer{
+    margin-top: 25px;
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    background-color: #283d3b ;
+    padding: 15px 0px;
+    text-align: center;
+}#1A5070
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}   
