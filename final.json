@@ -1,0 +1,15 @@
+{
+    "myinfo": [
+     
+      {
+        "name": "Marlon",
+        "surname":"Soza",
+        "birthday":"20 February",
+        "photo": "me.jpg",
+        "randomFact": [
+          "I enjoy listening to african music",
+          "favorite colour: lime green and black"
+        ]
+      }
+    ]
+  }
