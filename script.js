@@ -41,7 +41,8 @@ items.forEach(item => item.addEventListener('click', toggleAccordion));
 const requestURL = 'https://byui-cit230.github.io/lessons/lesson-09/data/latter-day-prophets.json';
 let prophets = [];
 
-function createCard(prophetsList){
+
+function createTemplate(prophetsList){
     prophetsList.forEach(prophet => {
         let card = document.createElement('section');
         let h2 = document.createElement('h2');
@@ -61,7 +62,7 @@ function createCard(prophetsList){
         card.appendChild(pBirthplace);
         card.appendChild(image);
 
-        document.querySelector('div.cards').appendChild(card);        
+        document.querySelector('div.templates').appendChild(card);        
     });
 }
 
@@ -73,13 +74,8 @@ fetch(requestURL)
   })
   .then(function (jsonObject) {
     prophets = jsonObject['prophets'];
-    createCard(prophets);
+    createTemplate(prophets);
   });
-
-
-
-
-
 
 
 
